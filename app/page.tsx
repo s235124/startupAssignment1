@@ -1,103 +1,70 @@
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+import Header from "@/components/Header"
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+export default function Home() {
+    return (
+        <>
+            <Header></Header>
+
+            <div className="px-4 py-5 my-5 text-center">
+                <img className="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72"
+                     height="57"/>
+                <h1 className="display-5 fw-bold">Get help to manage your very own Cabaret Club</h1>
+                <div className="col-lg-6 mx-auto">
+                    <p className="lead mb-4">If you have ever wanted to grow you Cabaret Club business to compete with
+                        the other great Cabaret Clubs, you have come to the right place.
+                        With the help of our experts, you can exponentially increase your customer base, as well as your
+                        revenue.</p>
+                    <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" className="btn btn-primary btn-lg px-4">Contact Us Now</button>
+                        <button type="button" className="btn btn-outline-secondary btn-lg px-4 gap-3">Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container col-xxl-8 px-4 py-5">
+                <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div className="col-10 col-sm-8 col-lg-6">
+                        <img src="/MajimaCropped.jpg" className="d-block mx-lg-auto img-fluid" alt="Goro Majima"
+                             width="400" loading="lazy"/>
+                    </div>
+                    <div className="col-lg-6">
+                        <h1 className="display-5 fw-bold lh-1 mb-3">Goro Majima</h1>
+                        <h2 className="display-7 fw-bold lh-1 mb-3">King of the Night</h2>
+                        <p className="lead">Goro Majima is an expert at the CCMT. During his time at the Grand Cabaret,
+                            he made it the number 1 establishment in town. He has also taken the cabaret club Shine,
+                            which was on its last leg, and turned it around.</p>
+                        <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" className="btn btn-primary btn-lg px-4">Contact Us Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container col-xxl-8 px-4 py-5">
+                <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div className="col-lg-6">
+                        <h1 className="display-5 fw-bold lh-1 mb-3">Kazuma Kiryu</h1>
+                        <h2 className="display-7 fw-bold lh-1 mb-3">The Dragon of Sotenbori</h2>
+                        <p className="lead">Kazuma Kiryu is an expert at the CCMT. With unmatched skill and unwavering
+                            dedication, Kiryu Kazuma turns struggling cabaret clubs into thriving entertainment hotspots.
+                            Under his guidance, every venue flourishes, staff excel, and guests experience
+                            unforgettable nights.</p>
+                        {/*The above paragraph was generated using AI, except for the first sentence*/}
+                        <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" className="btn btn-primary btn-lg px-4">Contact Us Now
+                            </button>
+                        </div>
+                    </div>
+                    <div className="col-10 col-sm-8 col-lg-6">
+                        <img src="/Kiryu.jpg" className="d-block mx-lg-auto img-fluid" alt="Kazuma Kiryu"
+                             width="400" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
