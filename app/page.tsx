@@ -1,4 +1,5 @@
 import Header from "@/components/Header"
+import { usePathname } from "next/navigation";
 
 export default function Home() {
     return (
@@ -28,7 +29,7 @@ export default function Home() {
                 <div className="container bg-secondary bg-opacity-10 col-xxl-8 px-4 py-5">
                     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div className="col-10 col-sm-8 col-lg-6">
-                            <img src="/MajimaCropped.jpg" className="d-block mx-lg-auto img-fluid" alt="Goro Majima"
+                            <img src="/startupAssignment1/MajimaCropped.jpg" className="d-block mx-lg-auto img-fluid" alt="Goro Majima"
                                  width="400" loading="lazy"/>
                         </div>
                         <div className="col-lg-6">
@@ -64,7 +65,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="col-10 col-sm-8 col-lg-6">
-                        <img src="/Kiryu.jpg" className="d-block mx-lg-auto img-fluid" alt="Kazuma Kiryu"
+                        <img src="/startupAssignment1/Kiryu.jpg" className="d-block mx-lg-auto img-fluid" alt="Kazuma Kiryu"
                              width="400" loading="lazy"/>
                     </div>
                 </div>
@@ -254,13 +255,13 @@ export default function Home() {
 
                     <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                         <li className="ms-3"><a className="text-muted" href="#">
-                            <img src="/twitter.svg" alt="Twitter Logo" className="img-fluid" width="24"/>
+                            <img src="/startupAssignment1/twitter.svg" alt="Twitter Logo" className="img-fluid" width="24"/>
                         </a></li>
                         <li className="ms-3"><a className="text-muted" href="#">
-                            <img src="/instagram.svg" alt="Instagram Logo" className="img-fluid" width="24"/>
+                            <img src="/startupAssignment1/instagram.svg" alt="Instagram Logo" className="img-fluid" width="24"/>
                         </a></li>
                         <li className="ms-3"><a className="text-muted" href="#">
-                            <img src="/facebook.svg" alt="Facebook Logo" className="img-fluid" width="24"/>
+                            <img src="/startupAssignment1/facebook.svg" alt="Facebook Logo" className="img-fluid" width="24"/>
                         </a></li>
                     </ul>
                 </footer>
