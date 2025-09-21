@@ -78,8 +78,8 @@ export default function Home() {
                 <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div className="col">
                         <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-                             style={{backgroundImage: "url('/youda.png')",
-                             backgroundSize: "cover",
+                             style={{backgroundImage: "url('/startupAssignment1/youda.png')",
+                             backgroundSize: "contain",
                              backgroundRepeat: "no-repeat",
                              backgroundPosition: "center"}}>
                             <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -109,8 +109,8 @@ export default function Home() {
 
                     <div className="col">
                         <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-                             style={{backgroundImage: "url('/yuki.png')",
-                                 backgroundSize: "cover",
+                             style={{backgroundImage: "url('/startupAssignment1/yuki.png')",
+                                 backgroundSize: "contain",
                                  backgroundRepeat: "no-repeat",
                                  backgroundPosition: "center"}}>
                         <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -141,8 +141,8 @@ export default function Home() {
                     <div className="col">
                         <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
                              style={{
-                                 backgroundImage: "url('/koyuki.png')",
-                                 backgroundSize: "cover",
+                                 backgroundImage: "url('/startupAssignment1/koyuki.png')",
+                                 backgroundSize: "contain",
                                  backgroundRepeat: "no-repeat",
                                  backgroundPosition: "center"}}>
                             <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
